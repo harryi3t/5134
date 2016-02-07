@@ -1,14 +1,35 @@
+# Language setting
 language: node_js
 
-node_js: 0.12
+# Version number
+node_js:
+  - 0.12
+  - 5.0
+  - 4.2.2
+
+
+env:
+  global:
+    - FOO=FUBU
+
+  matrix:
+    - M1=ONE
+    - M2=TWO
 
 build:
-  pre_ci:
-    - echo "This is pre_ci"
-    
+  cache: true
+  
   ci:
     - echo "Hello, World!"
-    - echo "This is master"
-    - echo "This is ??????"
-    - echo "Hello, World!"
-    - echo "This is !!!!!!"
+    
+integrations:
+  notifications:
+    - integrationName: ship-slack
+      type: slack
+      recipients: 
+        - "#testissues"
+        
+      on_start: always
+      on_pull_request: always
+      on_success: always
+      on_failure: always
