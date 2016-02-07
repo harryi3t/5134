@@ -24,7 +24,7 @@ build:
     
 integrations:
   notifications:
-    - integrationName: ShipSlack
+    - integrationName: Test
       type: slack
       recipients: 
         - "#testissues"
