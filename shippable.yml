@@ -1,9 +1,7 @@
-# Language setting
-language: node_js
+language: python
 
-# Version number
-node_js:
-  - 0.12
+python:
+  - 3.2
 
 env:
   global:
