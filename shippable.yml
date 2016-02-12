@@ -1,7 +1,7 @@
-language: clojure
+language: go
 
-lein:
-  - lein2
+go:
+  - 1.2
 
 build:
   pre_ci_boot:
