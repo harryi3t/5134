@@ -1,15 +1,8 @@
 language: python
 
 python:
-  - 3.2
-
-env:
-  global:
-    - FOO=FUBU
-
-  matrix:
-    - M1=ONE
-    - M2=TWO
+  - 2.7
+  - 3.4
 
 build:
   pre_ci_boot:
