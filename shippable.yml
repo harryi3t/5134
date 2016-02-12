@@ -17,22 +17,7 @@ build:
   pre_ci_boot:
     image_name: shippable/minv2
     image_tag: latest
-    pull: true
-    options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
-    
-  cache: true
   
   ci:
     - echo "Hello, World!"
     
-integrations:
-  notifications:
-    - integrationName: Test
-      type: slack
-      recipients: 
-        - "#testissues"
-        
-      on_start: always
-      on_pull_request: always
-      on_success: always
-      on_failure: always
