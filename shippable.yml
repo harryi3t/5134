@@ -4,6 +4,9 @@ python:
   - 3.4
 
 build:
+  pre-ci:
+    - echo "Hello, World!"
+    
   ci:
     - echo "Hello, World!"
     
