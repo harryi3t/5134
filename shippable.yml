@@ -5,8 +5,7 @@ python:
 
 build:
   pre_ci_boot:
-    image_name: shippable/minv2
-    image_tag: latest
+  - echo "Hello, World!"
   
   ci:
     - echo "Hello, World!"
