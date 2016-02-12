@@ -1,12 +1,13 @@
-language: python
+language: clojure
 
-python:
-  - 3.4
+lein:
+  - lein2
 
 build:
-  pre-ci:
-    - echo "Hello, World!"
-    
+  pre_ci_boot:
+    image_name: shippable/minv2
+    image_tag: latest
+  
   ci:
     - echo "Hello, World!"
     
