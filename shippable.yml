@@ -1,9 +1,12 @@
-language: go
+language: php
 
-go:
-  - 1.2
+php:
+  - 5.3
 
 build:
+  pre_ci_boot:
+    image_name: shippable/minv2
+    image_tag: latest
+  
   ci:
     - echo "Hello, World!"
-    
