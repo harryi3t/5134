@@ -4,10 +4,6 @@ scala:
     - 2.10.5
 
 build:
-  pre_ci_boot:
-    image_name: shippable/minv2
-    image_tag: latest
-  
   ci:
     - echo "Hello, World!"
     
