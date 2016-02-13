@@ -1,9 +1,9 @@
-language: python
+language: php
 
-python:
-  - 2.6
-  - 2.7
-  - 3.2
+php: 
+  - 5.3
+  - 5.4
+  - 5.5
   
 build:
   pre_ci_boot:
