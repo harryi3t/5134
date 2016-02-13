@@ -1,8 +1,11 @@
-language: go
+language: java
 
-go:
-  - 1.2
-  
+jdk:
+   - openjdk7
+   - oraclejdk7
+   - openjdk6
+   - oraclejdk8
+
 build:
   pre_ci_boot:
     image_name: shippable/minv2
