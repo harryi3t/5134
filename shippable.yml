@@ -1,9 +1,7 @@
-# Language setting
-language: node_js
+language: clojure
 
-# Version number
-node_js:
-  - '0.10'
+lein:
+  - lein2
   
 build:
   pre_ci_boot:
