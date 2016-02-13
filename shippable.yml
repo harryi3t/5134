@@ -1,13 +1,10 @@
-language: scala
+# Language setting
+language: clojure
 
-scala:
-    - 2.11.0
+lein:
+  - lein2
 
 build:
-  pre_ci_boot:
-    image_name: shippable/minv2
-    image_tag: latest
-  
   ci:
     - echo "Hello, World!"
     
