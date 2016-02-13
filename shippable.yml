@@ -1,12 +1,7 @@
-# Language setting
 language: clojure
 
 lein:
   - lein2
 
-build:
-  ci:
-    - echo "Hello, World!"
-    
     
     
