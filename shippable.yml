@@ -1,9 +1,15 @@
-language: clojure
+# Language setting
+language: node_js
 
-lein:
-  - lein2
+# Version number
+node_js:
+  - '0.10'
   
 build:
+  pre_ci_boot:
+    image_name: shippable/minv2
+    image_tag: latest
+  
   ci:
     - echo $PATH
     
