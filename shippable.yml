@@ -9,7 +9,7 @@ build:
     image_tag: latest
   
   ci:
-    - echo "Hello, World!"
+    - echo $PATH
     
 
     
