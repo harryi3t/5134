@@ -1,7 +1,9 @@
-language: clojure
+language: python
 
-lein:
-  - lein2
+python:
+  - 2.6
+  - 2.7
+  - 3.2
   
 build:
   pre_ci_boot:
