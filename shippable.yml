@@ -1,9 +1,7 @@
-language: php
+language: go
 
-php: 
-  - 5.3
-  - 5.4
-  - 5.5
+go:
+  - 1.2
   
 build:
   pre_ci_boot:
