@@ -7,7 +7,7 @@ node_js:
   - 0.11
 
 services:
-  - memcached
+  - elasticsearch
 
 build:
   pre_ci_boot:
@@ -17,5 +17,4 @@ build:
   ci:
     
     - echo "Hello, World!"
-  
   
