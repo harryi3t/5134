@@ -15,13 +15,6 @@ services:
 
   
 build:
-  
-  pre_ci_boot:
-    image_name: shippable/minv2
-    image_tag: latest
-    pull: true
-    options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
-
   ci:
     
     - echo "Hello, World!"
