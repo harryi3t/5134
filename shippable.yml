@@ -6,15 +6,13 @@ node_js:
   - 0.10
   - 0.11
 
-services:
-  - elasticsearch
-
 build:
   pre_ci_boot:
-    image_name: shippable/minv2
-    image_tag: latest
+    image_name: himanshu0503/u12sca
+    image_tag: tip
     
   ci:
-    
+    - java --version
+    - scala --version
     - echo "Hello, World!"
   
