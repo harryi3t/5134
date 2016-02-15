@@ -3,17 +3,12 @@ language: node_js
 
 # Version number
 node_js:
-  #- 0.12
   - 0.10
   - 0.11
-  #- 5.0
-  #- 4.2.2
-
 
 services:
-  - mongodb
+  - elasticsearch
 
-  
 build:
   pre_ci_boot:
     image_name: shippable/minv2
