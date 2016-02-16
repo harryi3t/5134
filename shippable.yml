@@ -1,12 +1,9 @@
-# Language setting
-language: java
-
+language: node_js
+  		  
 # Version number
-jdk:
-   - openjdk7
-   - oraclejdk7
-   - openjdk6
-   - oraclejdk8
+node_js:
+   - 0.10
+   - 0.11
 
 build:
   pre_ci_boot:
