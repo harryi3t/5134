@@ -6,10 +6,6 @@ node_js:
    - 0.11
 
 build:
-  pre_ci_boot:
-    image_name: himanshu0503/u12sca
-    image_tag: tip
-    
   ci:
     - java -version
     - sbt ++2.10.4 test
