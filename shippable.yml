@@ -1,11 +1,12 @@
 language: node_js
 
-# Version number
 node_js:
-   - 0.10
-   - 0.11
+    - 0.10
 
 build:
   ci:
-    - echo "Hello World!"
-  
+    - echo "Hello, World!"
+    - echo "This is master"
+    - echo "This is ??????"
+    - echo "Hello, World!"
+    - echo "This is !!!!!!"
