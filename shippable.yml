@@ -7,7 +7,5 @@ node_js:
 
 build:
   ci:
-    - java -version
-    - sbt ++2.10.4 test
-    - echo "Hello, World!"
+    - echo "Hello World!"
   
