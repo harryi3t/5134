@@ -1,20 +1,19 @@
-language: python
-
-node_js:
-    - 2.7
-    - 3.3
-    - 3.4
-    - 3.5
-
+language: ruby
+rvm:
+  - 1.8.7
+  - 1.9.2
+  - 1.9.3
+  - 2.0.0-p353
+  - 2.1.0
+  - 2.1.1
+  - 2.1.2
+  
 env:
   global:
     - FOO=FUBU
 
   matrix:
     - M1=ONE
-    - M2=TWO
-    - M3=THREE
-    - M4=FOUR
 
 build:
   ci:
