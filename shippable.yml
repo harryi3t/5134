@@ -13,6 +13,8 @@ env:
   matrix:
     - M1=ONE
     - M2=TWO
+    - M3=THREE
+    - M4=FOUR
 
 build:
   ci:
