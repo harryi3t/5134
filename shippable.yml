@@ -3,10 +3,26 @@ language: node_js
 node_js:
     - 0.10
 
+env:
+  global:
+    - FOO=FUBU
+
+  matrix:
+    - M1=ONE
+    - M2=TWO
+
 build:
   ci:
     - echo "Hello, World!"
-    - echo "This is master"
-    - echo "This is ??????"
-    - echo "Hello, World!"
-    - echo "This is !!!!!!"
+    
+integrations:
+  notifications:
+    - integrationName: Test
+      type: slack
+      recipients: 
+        - "#testissues"
+        
+      on_start: always
+      on_pull_request: always
+      on_success: always
+      on_failure: always
