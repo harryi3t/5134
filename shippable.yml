@@ -1,10 +1,13 @@
-language: python
+language: node_js
 
+# Version number
 node_js:
-  2.7
-  3.3
-  3.4
-  pypy
+  - 0.10
+  - 4.2.3
+  - iojs-v1
+  - iojs-v2
+  - iojs-v3
+  - 5.0
   
 env:
   global:
