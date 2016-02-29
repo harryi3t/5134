@@ -1,13 +1,12 @@
-language: node_js
+
+# Language setting
+language: go
 
 # Version number
-node_js:
-  - 0.10
-  - 4.2.3
-  - iojs-v1
-  - iojs-v2
-  - iojs-v3
-  - 5.0
+go:
+  - 1.1
+  - 1.2
+  - 1.3
   
 env:
   global:
