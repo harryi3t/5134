@@ -1,4 +1,4 @@
-build_image: drydock/shippable/minv2
+build_image: shippable/minv2
 
 language: php
 
