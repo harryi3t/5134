@@ -1,11 +1,8 @@
-# Language setting
-language: go
+-language: php
 
-# Version number
-go:
-  - 1.1
-  - 1.2
-  - 1.3
+php:
+  - 5.6
+  - '7.0'
   
 env:
   global:
