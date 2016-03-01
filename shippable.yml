@@ -16,17 +16,3 @@ env:
 build:
   ci:
     - php --version
-    - mkdir /root/.composer
-    - composer self-update
-    
-integrations:
-  notifications:
-    - integrationName: Test
-      type: slack
-      recipients: 
-        - "#testissues"
-        
-      on_start: always
-      on_pull_request: always
-      on_success: always
-      on_failure: always
