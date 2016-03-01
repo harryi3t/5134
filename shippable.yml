@@ -14,6 +14,7 @@ env:
 build:
   ci:
     - php --version
+    - mkdir /root/.composer
     - composer self-update
     
 integrations:
