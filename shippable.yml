@@ -3,6 +3,28 @@ language: php
 php:
   - 5.4
   - 5.5
+  - 5.6
+  - '7.0'
+
+addons:
+  hosts:
+    local.symfony2-standard-template: 127.0.0.1
+
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install apache2
+  - sudo cp config/src.vhost.conf /etc/apache2/sites-available
+  - sudo a2ensite src.vhost.conf
+  - sudo a2enmod rewrite
+  - sudo a2enmod headers
+  - sudo service apache2 restart
+  - composer install --prefer-source --no-interaction --optimize-autoloader
+
+before_script:
+  - echo "xdebug.max_nesting_level = 500" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
 
 script:
-  - echo "Hello World!"
+  - bin/behat --format junit --out shippable/testresults/ features/test.feature
+
+notifications:
+  email: false
