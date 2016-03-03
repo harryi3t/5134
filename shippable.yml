@@ -8,6 +8,7 @@ php:
 
 build:
   ci:
+    - echo $PATH
     - apt-get update
     - echo "Hello, World!"
     - echo "This is master"
