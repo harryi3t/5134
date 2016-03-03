@@ -1,3 +1,5 @@
+build_image: drydock/u14nodall
+
 language: node_js
 
 node_js: 0.12
