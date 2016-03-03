@@ -1,4 +1,4 @@
-build_image: drydock/u14nodall:prod
+build_image: drydock/u14phppls:prod
 
 language: node_js
 
