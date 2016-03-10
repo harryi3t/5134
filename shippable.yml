@@ -12,7 +12,7 @@ services:
 build:
   ci:
     - echo $PATH
-    - apt-get update
+    - echo -e "\e[1;32m This is red text \e[0m"
     - echo "Hello, World!"
     - echo "This is master"
     - echo "This is ??????"
