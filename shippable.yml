@@ -8,7 +8,7 @@ php:
   
 build:
   ci:
-    - apt-get update
+    - which composer
     #- echo $PATH
     - echo -e "\e[1;32m This is green text \e[0m"
     - echo "Hello, World!"
