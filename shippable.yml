@@ -1,5 +1,3 @@
-build_image: shippable/minv2
-
 language: php
 
 php:
