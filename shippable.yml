@@ -6,7 +6,7 @@ php:
   
 build:
   ci:
-    - sleep 1m
+    - sleep 2m
     - echo -e "\e[1;32m This is green text \e[0m"
     - echo "Hello, World!"
     - echo "This is master"
