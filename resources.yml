@@ -1,0 +1,15 @@
+resources:
+  - name: dockInImage
+    type: image
+    integration: dockerhub
+    source:
+      name: "library/busybox"
+      isPull: true
+      tag: latest
+  - name: dockOutImage
+    type: image
+    integration: dockerhub
+    source:
+      name: "harryi3t/busybox"
+      isPull: true
+      tag: latest
