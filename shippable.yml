@@ -23,7 +23,7 @@ integrations:
       type: webhook
       payload:
         - resourceId=13847
-        #- versionName="$BRANCH.$SHIPPABLE_BUILD_NUMBER"
+        - versionName=$BRANCH.$SHIPPABLE_BUILD_NUMBER
       branches:
         only:
           - master
