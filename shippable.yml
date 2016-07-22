@@ -22,7 +22,7 @@ integrations:
     - integrationName: trigger_resource
       type: webhook
       payload:
-        - resourceId=13848
+        - resourceId=13847
         - versionName="$BRANCH.$SHIPPABLE_BUILD_NUMBER"
       branches:
         only:
