@@ -1,16 +1,29 @@
 language: none
 
+env:
+  - IMAGE_NAME=harryi3t/busybox
+
 build:
   ci:
-    - echo "Hello, World!"
-    - echo "This is master"
+    - echo "Let's build some cool stuff"
+    - sudo docker build --rm -t=$IMAGE_NAME:$BRANCH.$SHIPPABLE_BUILD_NUMBER .
+
+  post_ci:
+    -  sudo docker push $IMAGE_NAME:$BRANCH.$SHIPPABLE_BUILD_NUMBER
 
 integrations:
+  hub:
+    - integrationName: "dockerhub"
+      type: docker
+      branches:
+          only:
+            - master
   notifications:
     - integrationName: trigger_resource
       type: webhook
       payload:
         - resourceId=13848
+        - versionName="$BRANCH.$SHIPPABLE_BUILD_NUMBER"
       branches:
         only:
           - master
