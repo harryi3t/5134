@@ -9,3 +9,18 @@ build:
   ci:
     - echo "Hello, World!"
     - echo "This is master"
+
+integrations:
+  notifications:
+    - integrationName: trigger_resource
+      type: webhook
+      payload:
+        - isPRBuild=$IS_PULL_REQUEST
+        - branchName=$BRANCH
+        - message=Shippable Run $BUILD_NUMBER ($BUILD_URL) succeeded for $COMPARE_URL
+      branches:
+        only:
+          - master
+      on_success: always
+      on_failure: always
+      on_start: always
