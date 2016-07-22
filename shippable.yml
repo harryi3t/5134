@@ -10,7 +10,7 @@ integrations:
     - integrationName: trigger_resource
       type: webhook
       payload:
-        - resourceId = 30
+        - resourceId=30
       branches:
         only:
           - master
