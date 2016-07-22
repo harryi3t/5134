@@ -10,9 +10,7 @@ integrations:
     - integrationName: trigger_resource
       type: webhook
       payload:
-        - isPRBuild=$IS_PULL_REQUEST
-        - branchName=$BRANCH
-        - message=Shippable Run $BUILD_NUMBER ($BUILD_URL) succeeded for $COMPARE_URL
+        - "resourceId" : "30"
       branches:
         only:
           - master
