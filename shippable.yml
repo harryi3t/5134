@@ -1,10 +1,5 @@
-build_image: drydock/u14nod:prod 
+language: none
 
-language: ruby
-
-rvm:
-  - 1.9
-  
 build:
   ci:
     - echo "Hello, World!"
