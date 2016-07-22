@@ -7,15 +7,5 @@ rvm:
   
 build:
   ci:
-    - rm -f /etc/apt/sources.list.d/google-chrome.list
-    - cd /var/lib/apt
-    - sudo mv lists lists.old
-    - sudo mkdir -p lists/partial
-    - sudo apt-get update 
-    - sleep 2m
-    - echo -e "\e[1;32m This is green text \e[0m"
     - echo "Hello, World!"
     - echo "This is master"
-    - echo "This is ??????"
-    - echo "Hello, World!"
-    - echo "This is !!!!!!"
