@@ -19,12 +19,10 @@ integrations:
           only:
             - master
   notifications:
-    - integrationName: trigger_resource
+    - integrationName: triggerResource
       type: webhook
       payload:
-        - resourceId=14555
         - versionName=$BRANCH.$SHIPPABLE_BUILD_NUMBER
-        - propertybag="{integration:'foo-bar'}"
       branches:
         only:
           - master
