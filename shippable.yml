@@ -18,14 +18,14 @@ integrations:
       branches:
           only:
             - master
-  notifications:
-    - integrationName: triggerResource
-      type: webhook
-      payload:
-        - versionName=$BRANCH.$SHIPPABLE_BUILD_NUMBER
-      branches:
-        only:
-          - master
-      on_success: always
-      on_failure: never
-      on_start: never
+  # notifications:
+  #   - integrationName: triggerResource
+  #     type: webhook
+  #     payload:
+  #       - versionName=$BRANCH.$SHIPPABLE_BUILD_NUMBER
+  #     branches:
+  #       only:
+  #         - master
+  #     on_success: always
+  #     on_failure: never
+  #     on_start: never
