@@ -1,3 +1,3 @@
 # 5134 - issuetest
 
-test commit-3
+test commit
