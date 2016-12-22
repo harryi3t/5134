@@ -19,16 +19,16 @@ integrations:
           only:
             - master
   notifications:
-    - integrationName: triggerImageResource
-      type: webhook
-      payload:
-        - versionName=$BRANCH.$SHIPPABLE_BUILD_NUMBER
-      branches:
-        only:
-          - master
-      on_success: always
-      on_failure: always
-      on_start: always
+    # - integrationName: triggerImageResource
+    #   type: webhook
+    #   payload:
+    #     - versionName=$BRANCH.$SHIPPABLE_BUILD_NUMBER
+    #   branches:
+    #     only:
+    #       - master
+    #   on_success: always
+    #   on_failure: always
+    #   on_start: always
     - integrationName: triggerFileResource
       type: webhook
       payload:
