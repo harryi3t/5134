@@ -20,14 +20,7 @@ var names = [
     'marry',
   ];
 
-  names = [
-    'harry',
-    'barry',
-    'garry',
-    'harry',
-    'barry',
-    'marry',
-  ];
+  names = [ 'harry', 'barry', 'garry', 'harry', 'barry', 'marry', ];
 
   names = [
     'harry',
