@@ -9,4 +9,4 @@ function hello (names){
   });
 }
 
-module.exports=hello
+module.exports=hello;
