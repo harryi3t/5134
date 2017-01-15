@@ -1,4 +1,8 @@
-var hello = require('./hello.js');
-var names = ['harry', 'barry', 'garry'];
+'use strict';
 
-hello(names);
+
+
+var hello = require('./hello.js')
+var names =['harry','barry','garry'];
+
+  hello(names);
