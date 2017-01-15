@@ -1,6 +1,6 @@
 'use strict';
 
-function hello (names){
+function hello1 (names){
   if(names.length > 0)
   names.forEach(
     function (name) {
@@ -10,7 +10,7 @@ function hello (names){
   );
 }
 
-function hello (names){
+function hello2 (names){
   if(names.length > 0)
   names.forEach(
     function (name) {
@@ -20,7 +20,7 @@ function hello (names){
   );
 }
 
-function hello (names){
+function hello3 (names){
   if(names.length > 0)
   names.forEach(function (name) {
     name[0] =name[0].toUpperCase();
@@ -28,7 +28,7 @@ function hello (names){
   });
 }
 
-function hello (names){
+function hello4 (names){
   if(names.length > 0)
   names.forEach(
     function (name) {
@@ -38,14 +38,12 @@ function hello (names){
   );
 }
 
-function hello (names){
+function hello5 (names){
   if(names.length > 0)
-  names.forEach(
-    function (name) {
-      name[0] =name[0].toUpperCase();
-      console.log(name)
-    }
-  );
+  names.forEach(function (name) {
+    name[0] =name[0].toUpperCase();
+    console.log(name)
+  });
 }
 
-module.exports=hello;
+module.exports=hello1;
