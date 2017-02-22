@@ -5,5 +5,5 @@ env:
 
 build:
   ci:
-    - echo "Let's build some cool stuff"
-    - sudo docker build --rm -t=$IMAGE_NAME:$BRANCH.$SHIPPABLE_BUILD_NUMBER .
+    - echo "Let's fail this build"
+    - ls NO_SUCH_FILE_OR_DIRECTORY
