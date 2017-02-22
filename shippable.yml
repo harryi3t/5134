@@ -7,14 +7,3 @@ build:
   ci:
     - echo "Let's build some cool stuff"
     - sudo docker build --rm -t=$IMAGE_NAME:$BRANCH.$SHIPPABLE_BUILD_NUMBER .
-
-  # post_ci:
-  #   -  sudo docker push $IMAGE_NAME:quick.$SHIPPABLE_BUILD_NUMBER
-
-integrations:
-  hub:
-    - integrationName: "docker"
-      type: docker
-      branches:
-          only:
-            - master
