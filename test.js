@@ -11,10 +11,17 @@ var names = [
   'marry',
 ];
 
-// this line in unchanged
+var names2 = [
+  'harry',
+  'barry',
+  'garry',
+  'harry',
+  'barry',
+  'marry',
+];
 
 // after this line new chunk will be created
-var names2 = [
+var names3 = [
   'harry',
   'barry',
   'garry',
