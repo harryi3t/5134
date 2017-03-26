@@ -2,7 +2,14 @@
 
 var hello = require('./hello.js');
 
-var names = ['harry', 'barry', 'garry', 'harry', 'barry', 'marry'];
+var names = [
+  'harry',
+  'barry',
+  'garry',
+  'harry',
+  'barry',
+  'marry',
+];
 
 var names2 = [
   'harry',
@@ -16,7 +23,9 @@ var names2 = [
 // after this line new chunk will be created
 var names3 = [
   'harry',
+  'barry',
+  'garry',
   'harry',
   'barry',
-  'marry', 'garry',
+  'marry',
 ];
